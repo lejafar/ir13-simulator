@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>IR13 - De Logische Trein | Simulator</title>
     <script src="https://cjrtnc.leaningtech.com/2.3/loader.js"></script>
   </head>
-  <body>
-  </body>
+  <body></body>
   <script>
-      cheerpjInit();
-      cheerpjCreateDisplay(screen.width | 1080,screen.height | 1920);
-      cheerpjRunJar("/app/Simulator.jar"); 
+    cheerpjInit();
+    var width =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+    var height =
+      window.innerHeight ||
+      document.documentElement.clientHeight ||
+      document.body.clientHeight;
+    cheerpjCreateDisplay(width, height);
+    cheerpjRunJar("/app/ir13-simulator/Simulator.jar");
   </script>
 </html>
